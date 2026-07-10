@@ -1,0 +1,691 @@
+/* ===========================
+   PAGE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.login-page{
+    display:flex;
+    min-height:100vh;
+    overflow-x:hidden;
+    background:#eef4ff;
+}
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+.login-left{
+
+    flex:1.2;
+
+    position:relative;
+
+    background-image:
+    linear-gradient(rgba(5,30,70,.65),
+    rgba(5,30,70,.65)),
+    url("https://images.unsplash.com/photo-1540339832862-474599807836?q=80&w=2000");
+
+    background-size:cover;
+    background-position:center;
+
+    overflow:hidden;
+
+}
+
+/* Curved Divider */
+
+.login-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-5%;
+
+    right:-120px;
+
+    width:240px;
+
+    height:110%;
+
+    background:#0d6efd;
+
+    border-radius:120px;
+
+    transform:rotate(5deg);
+
+    opacity:.95;
+
+    
+    z-index:1;
+    pointer-events:none;
+
+
+}
+
+/* Dark Overlay */
+
+.overlay{
+
+    position:relative;
+
+    z-index:10;
+
+    width:100%;
+
+    height:100%;
+
+    padding:50px 70px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* Logo */
+
+.brand{
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    margin-bottom:90px;
+
+}
+
+/* ===========================
+   HERO TEXT
+=========================== */
+
+.hero-content{
+
+    max-width:520px;
+
+}
+
+.hero-content h1{
+
+    font-size:72px;
+
+    line-height:1.05;
+
+    color:white;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content span{
+
+    color:#3f9cff;
+
+}
+
+.hero-content p{
+
+    color:#d6dff5;
+
+    font-size:23px;
+
+    line-height:1.7;
+
+    margin-bottom:70px;
+
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.feature-list{
+
+    margin-top:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+}
+
+.feature{
+
+    color:white;
+
+    text-align:center;
+
+    flex:1;
+
+}
+
+.feature-icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(8px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+}
+
+.feature h4{
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+}
+
+.feature p{
+
+    color:#d7dff5;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.login-right{
+
+    flex:.95;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px;
+
+    background:radial-gradient(circle at top,#ffffff,#eef4ff);
+
+    position:relative;
+
+}
+/* Login Card */
+
+.login-card{
+
+    position:relative;
+
+    width:470px;
+
+    background:#fff;
+
+    border-radius:28px;
+
+    padding:85px 45px 45px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.15);
+
+    z-index:10;
+
+}
+
+/* ====================================
+   LOGIN ICON
+==================================== */
+
+.plane-circle{
+
+    position:absolute;
+
+    top:-45px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    box-shadow:0 15px 35px rgba(13,110,253,.35);
+
+}
+
+/* ====================================
+   HEADING
+==================================== */
+
+.login-card h2{
+
+    text-align:center;
+
+    font-size:50px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+    color:#222;
+
+}
+
+.login-card h2 span{
+
+    color:#0d6efd;
+
+}
+
+.login-card>p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+/* ====================================
+   FORM
+==================================== */
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    color:#222;
+
+}
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #dcdcdc;
+
+    border-radius:12px;
+
+    padding:14px 18px;
+
+    transition:.3s;
+
+}
+
+.input-box:hover{
+
+    border-color:#0d6efd;
+
+}
+
+.input-box:focus-within{
+
+    border-color:#0d6efd;
+
+    box-shadow:
+    0 0 0 4px rgba(13,110,253,.12);
+
+}
+
+.input-box span{
+
+    font-size:22px;
+
+    margin-right:15px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    font-size:17px;
+
+    background:transparent;
+
+}
+
+/* ====================================
+   FORGOT
+==================================== */
+
+.forgot{
+
+    text-align:right;
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.forgot:hover{
+
+    color:#0047b3;
+
+}
+
+/* ====================================
+   LOGIN BUTTON
+==================================== */
+
+.login-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:
+    0 12px 25px rgba(13,110,253,.28);
+
+}
+
+.login-btn:hover{
+
+    background:#0052d6;
+
+    transform:translateY(-3px);
+
+}
+
+/* ====================================
+   DIVIDER
+==================================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:30px 0;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.divider span{
+
+    color:#888;
+
+    font-weight:600;
+
+}
+
+/* ====================================
+   SOCIAL BUTTONS
+==================================== */
+
+.google-btn,
+.apple-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.google-btn{
+
+    border:1px solid #d9d9d9;
+
+    background:white;
+
+    margin-bottom:16px;
+
+}
+
+.google-btn:hover{
+
+    background:#f5f5f5;
+
+}
+
+.apple-btn{
+
+    background:black;
+
+    color:white;
+
+    border:none;
+
+}
+
+.apple-btn:hover{
+
+    background:#222;
+
+}
+
+/* ====================================
+   REGISTER
+==================================== */
+
+.register{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+.register span{
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+    margin-left:6px;
+
+    cursor:pointer;
+
+}
+
+.register span:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+
+@media(max-width:1100px){
+
+.login-page{
+
+    flex-direction:column;
+
+}
+
+.login-left{
+
+    min-height:420px;
+
+}
+
+.login-left::after{
+
+    display:none;
+
+}
+
+.overlay{
+
+    padding:40px;
+
+}
+
+.hero-content h1{
+
+    font-size:52px;
+
+}
+
+.feature-list{
+
+    margin-top:60px;
+
+}
+
+.login-right{
+
+    padding:60px 20px;
+
+}
+
+.login-card{
+
+    width:100%;
+    max-width:520px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+}
+
+.feature-list{
+
+    flex-direction:column;
+
+}
+
+.login-card{
+
+    padding:35px;
+
+}
+
+.login-card h2{
+
+    font-size:38px;
+
+}
+
+.brand{
+
+    font-size:28px;
+
+}
+
+}

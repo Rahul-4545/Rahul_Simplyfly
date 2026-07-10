@@ -1,0 +1,143 @@
+.flight-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.flight-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,102,255,.15);
+
+}
+
+.airline-name{
+
+    color:#0066ff;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.flight-route{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.flight-route h3{
+
+    margin:0;
+
+    font-size:24px;
+
+}
+
+.flight-route small{
+
+    color:#777;
+
+}
+
+.arrow{
+
+    font-size:24px;
+
+    color:#0066ff;
+
+}
+
+.flight-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:18px;
+
+}
+
+.flight-info span{
+
+    display:block;
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+.flight-info strong{
+
+    font-size:18px;
+
+}
+
+.flight-footer{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.flight-footer small{
+
+    color:#777;
+
+}
+
+.flight-footer h2{
+
+    color:#0066ff;
+
+    margin-top:5px;
+
+}
+
+.flight-footer button{
+
+    border:none;
+
+    background:#0066ff;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.flight-footer button:hover{
+
+    background:#0047b3;
+
+}

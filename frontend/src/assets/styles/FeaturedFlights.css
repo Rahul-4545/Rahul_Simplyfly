@@ -1,0 +1,29 @@
+.featured-section{
+
+    padding:90px 8%;
+
+    background:#f8fbff;
+
+}
+
+.featured-section h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#0066ff;
+
+    margin-bottom:60px;
+
+}
+
+.featured-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}

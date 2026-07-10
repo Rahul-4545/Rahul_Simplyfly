@@ -1,0 +1,39 @@
+.topbar{
+
+    height:80px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+}
+
+.topbar h2{
+
+    color:#0d6efd;
+
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.topbar-right span{
+
+    font-weight:600;
+
+}

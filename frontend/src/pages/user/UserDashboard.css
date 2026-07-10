@@ -1,0 +1,364 @@
+/* ===========================
+   USER DASHBOARD
+=========================== */
+
+.dashboard-page{
+    background:#f4f8fc;
+    min-height:100vh;
+    padding:30px;
+}
+
+/* ===========================
+   LOADING
+=========================== */
+
+.dashboard-loading{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero-banner{
+    background:linear-gradient(135deg,#0d6efd,#0b5ed7);
+    color:white;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 15px 35px rgba(13,110,253,.25);
+}
+
+.hero-banner h2{
+    font-size:34px;
+    font-weight:700;
+}
+
+.hero-banner p{
+    margin-top:10px;
+    opacity:.9;
+    font-size:17px;
+    line-height:28px;
+}
+
+.hero-name{
+    color:#ffd54f;
+}
+
+.hero-plane{
+
+    font-size:90px;
+
+    text-align:right;
+
+    opacity:.15;
+
+    user-select:none;
+
+}
+
+/* ===========================
+   STATISTICS
+=========================== */
+
+.stats-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:140px;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.stats-card h6{
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+}
+
+.stats-card h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+.stats-icon{
+
+    font-size:48px;
+
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section-title{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:#0d6efd;
+
+}
+
+/* ===========================
+   QUICK ACTIONS
+=========================== */
+
+.quick-card{
+
+    background:white;
+
+    border:none;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.quick-card:hover{
+
+    background:#0d6efd;
+
+    color:white;
+
+    transform:translateY(-6px);
+
+}
+
+.quick-icon{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.quick-card h5{
+
+    font-weight:600;
+
+}
+
+.quick-card p{
+
+    margin-bottom:0;
+
+    opacity:.8;
+
+}
+
+/* ===========================
+   UPCOMING TRIP
+=========================== */
+
+.upcoming-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.upcoming-card h4{
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+}
+
+.upcoming-card strong{
+
+    color:#555;
+
+}
+
+/* ===========================
+   BOOKING TABLE
+=========================== */
+
+.booking-table{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.booking-table .card-header{
+
+    background:#0d6efd;
+
+    color:white;
+
+    padding:18px 25px;
+
+}
+
+.booking-table .card-header h5{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#edf4ff;
+
+}
+
+.table th{
+
+    border:none;
+
+    padding:15px;
+
+    font-weight:600;
+
+}
+
+.table td{
+
+    padding:18px 15px;
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    transition:.2s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f5f9ff;
+
+}
+
+.badge{
+
+    padding:8px 12px;
+
+    font-size:13px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary{
+
+    border-radius:10px;
+
+    padding:10px 20px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .hero-plane{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .dashboard-page{
+
+        padding:15px;
+
+    }
+
+    .hero-banner{
+
+        text-align:center;
+
+    }
+
+    .hero-banner h2{
+
+        font-size:28px;
+
+    }
+
+    .stats-card{
+
+        height:auto;
+
+    }
+
+    .quick-card{
+
+        margin-bottom:15px;
+
+    }
+
+}
